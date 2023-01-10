@@ -84,6 +84,3 @@ SSIA
 ### コンポーネント名の入力
 
 SSIA
-
-# frontend-nextjs-template
-# frontend-nextjs-template
