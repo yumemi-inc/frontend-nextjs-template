@@ -27,7 +27,7 @@
         "test": "templates/components/TemplateName.test.tsx",
         "interface": "templates/components/interface.ts",
         "lazy": "templates/components/lazy.tsx",
-        "story": "templates/components/story.tsx",
+        "story": "templates/components/index.stories.tsx",
         "uses": "templates/components/uses.ts",
         "usesTest": "templates/components/uses.test.ts"
       }
