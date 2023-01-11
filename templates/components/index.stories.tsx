@@ -1,7 +1,7 @@
 /** @format */
 
 import { Meta, StoryFn } from "@storybook/react"
-import TemplateName from "./TemplateName"
+import TemplateName from "."
 import { TemplateNameProps } from "./interface"
 
 export const Default = {}
