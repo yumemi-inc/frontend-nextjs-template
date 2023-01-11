@@ -7,7 +7,8 @@ const TARGET_DIR = "./src/pages"
 
 const START = `1. 生成タイプの選択 (SSR/SSG/ISR)
 2. 生成パスの入力 [hoge]/fuga
-3. コンポーネント名の入力 example
+
+生成サンプル → src/pages/[hoge]/fuga/index.tsx
 `
 const CONTENTS = [
   {
