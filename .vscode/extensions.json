@@ -4,9 +4,16 @@
 
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
-		"dbaeumer.vscode-eslint", // eslint
-		"firsttris.vscode-jest-runner", // jest
-		"esbenp.prettier-vscode" // prettier
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "mosapride.zenkaku",
+    "formulahendry.auto-rename-tag",
+    "xyz.local-history",
+    "wmaurer.change-case",
+    "eamodio.gitlens",
+    "MS-vsliveshare.vsliveshare",
+    "tldraw-org.tldraw-vscode"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
