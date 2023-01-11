@@ -7,7 +7,7 @@
     "fix:js": "prettier --check --write .",
     "lint:js": "next lint",
     "storybook": "storybook dev -p 6006 -s ./public",
-    "build-storybook": "storybook build -s ./public",
+    "storybook:build": "storybook build -s ./public",
     "generate:component": "node ./scripts/generateComponent.mjs",
     "generate:page": "node ./scripts/generatePage.mjs"
   },
