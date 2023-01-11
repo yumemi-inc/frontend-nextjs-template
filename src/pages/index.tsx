@@ -1,7 +1,6 @@
 /** @format */
 
 import { GetStaticProps } from "next"
-import Button from "@/components/common/Button/Button.lazy"
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -10,4 +9,4 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-export default Button
+export default () => <>example index</>
