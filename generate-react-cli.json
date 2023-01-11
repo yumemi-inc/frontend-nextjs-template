@@ -17,19 +17,19 @@
     "component": {
       "path": "src/components",
       "withTest": false,
-      "withInterface": true,
+      "withTypes": true,
       "withLazy": false,
       "withStory": false,
-      "withUses": false,
-      "withUsesTest": false,
+      "withHooks": false,
+      "withHooksTest": false,
       "customTemplates": {
         "component": "templates/components/index.tsx",
         "test": "templates/components/index.test.tsx",
-        "interface": "templates/components/interface.ts",
+        "types": "templates/components/types.ts",
         "lazy": "templates/components/lazy.tsx",
         "story": "templates/components/index.stories.tsx",
-        "uses": "templates/components/uses.ts",
-        "usesTest": "templates/components/uses.test.ts"
+        "hooks": "templates/components/uses.ts",
+        "usesHooks": "templates/components/uses.test.ts"
       }
     },
     "ssr": {

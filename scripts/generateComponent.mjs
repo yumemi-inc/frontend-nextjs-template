@@ -38,8 +38,8 @@ const CONTENTS = [
       { title: "unit test", value: "--withTest=true" },
       { title: "lazy component", value: "--withLazy=true" },
       { title: "storybook", value: "--withStory=true" },
-      { title: "hooks", value: "--withUses=true" },
-      { title: "hooks unit test", value: "--withUsesTest=true" },
+      { title: "hooks", value: "--withHooks=true" },
+      { title: "hooks unit test", value: "--withHooksTest=true" },
     ],
   },
 ]
