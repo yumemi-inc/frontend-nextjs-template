@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> it should mount 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="button"
+  >
+    button Component
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Button /> スナップショットテスト 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="button"
+  >
+    button Component
+  </div>
+</DocumentFragment>
+`;

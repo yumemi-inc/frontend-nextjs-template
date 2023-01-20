@@ -7,7 +7,8 @@ const TARGET_DIR = "./src/pages"
 
 const START = `1. 生成タイプの選択 (SSR/SSG/ISR)
 2. 生成パスの入力 [hoge]/fuga
-3. コンポーネント名の入力 example
+
+生成サンプル → src/pages/[hoge]/fuga/index.tsx
 `
 const CONTENTS = [
   {
@@ -27,13 +28,6 @@ const CONTENTS = [
     message: `パスの指定 ${TARGET_DIR}`,
     format: (targetPath) => path.join(TARGET_DIR, targetPath || ""),
   },
-  {
-    type: "text",
-    name: "name",
-    message: "コンポーネント名の指定",
-    validate: (value) =>
-      value == null || value === "" ? "コンポーネントの名前を入力してください" : true,
-  },
 ]
 
 const onCancel = () => {
@@ -42,5 +36,5 @@ const onCancel = () => {
 }
 
 console.log(START)
-const { targetPath, type, name } = await prompts(CONTENTS, { onCancel })
-await $`npx generate-react-cli component --type=${type} --path=${targetPath} ${name}`
+const { targetPath, type } = await prompts(CONTENTS, { onCancel })
+await $`npx generate-react-cli component --type=${type} --path=${targetPath} index`

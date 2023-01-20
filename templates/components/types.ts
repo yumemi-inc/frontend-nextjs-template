@@ -1,5 +1,5 @@
 /** @format */
 
-export interface TemplateNameProps {}
+export type TemplateNameProps = {}
 
 export const TemplateNameMockProps: TemplateNameProps = {}

@@ -12,4 +12,5 @@ describe("Button hooks test", () => {
     act(() => view.result.current.increment())
     expect(view.result.current.count).toBe(2)
   })
+
 })
