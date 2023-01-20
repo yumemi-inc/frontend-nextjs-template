@@ -1,13 +1,14 @@
 /** @format */
 
 import React, { FC } from "react"
-import { TemplateNameProps } from "./interface"
-// import { useTemplateName } from './uses'; 
+import { TemplateNameProps } from "./types"
+import styles from './index.module.scss';
+// import { useTemplateName } from './uses';
 
 const TemplateName: FC<TemplateNameProps> = (props) => {
   // const hoge = useTemplateName();
   return (
-    <div data-testid="template-name">
+    <div className={styles.component_name} data-testid="template-name">
       template-name Component
     </div>
   )

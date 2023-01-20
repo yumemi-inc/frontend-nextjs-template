@@ -22,14 +22,17 @@
       "withStory": false,
       "withHooks": false,
       "withHooksTest": false,
+      "withScss": false,
+      "flat": true,
       "customTemplates": {
         "component": "templates/components/index.tsx",
+        "scss": "templates/components/index.module.scss",
         "test": "templates/components/index.test.tsx",
         "types": "templates/components/types.ts",
         "lazy": "templates/components/lazy.tsx",
         "story": "templates/components/index.stories.tsx",
         "hooks": "templates/components/uses.ts",
-        "usesHooks": "templates/components/uses.test.ts"
+        "hooksTest": "templates/components/uses.test.ts"
       }
     },
     "ssr": {
