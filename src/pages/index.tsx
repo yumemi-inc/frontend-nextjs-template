@@ -2,6 +2,10 @@
 
 import { GetStaticProps } from "next"
 
+const TemplateName = () => {
+  return <>example index</>
+}
+
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {},
@@ -9,4 +13,4 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-export default () => <>example index</>
+export default TemplateName;
