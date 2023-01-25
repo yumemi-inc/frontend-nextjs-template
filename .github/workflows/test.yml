@@ -1,0 +1,22 @@
+lines (16 sloc)  334 Bytes
+
+name: lint-and-build
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - run: npm install
+      - run: npm run lint:js
+      - run: npm run test
+      - run: npm run build
