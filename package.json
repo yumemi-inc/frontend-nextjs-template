@@ -4,12 +4,14 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "test": "jest",
+    "test:update-snapshot": "jest --updateSnapshot",
     "fix:js": "prettier --check --write .",
     "lint:js": "next lint",
     "storybook": "storybook dev -p 6006 -s ./public",
     "storybook:build": "storybook build -s ./public",
-    "generate:component": "node ./scripts/generateComponent.mjs",
-    "generate:page": "node ./scripts/generatePage.mjs"
+    "generate:component": "generate-next-cli -g component",
+    "generate:page": "generate-next-cli -g page"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -18,6 +20,7 @@
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "recoil": "^0.7.6",
     "reset-css": "^5.0.1"
   },
   "devDependencies": {
