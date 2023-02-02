@@ -8,18 +8,18 @@ import { TemplateNameMockProps } from "./type"
 
 describe("<Button />", () => {
   test("スナップショットテスト", () => {
-    const { asFragment } = render(<TmplateName {...TemplateNameMockProps} />)
+    const { asFragment } = render(<TemplateName {...TemplateNameMockProps} />)
     expect(asFragment()).toMatchSnapshot()
   })
 
   test('成功ケースのテスト', () => {
-    render(<TmplateName {...TemplateNameMockProps} />)
+    render(<TemplateName {...TemplateNameMockProps} />)
     const element = screen.getByTestId('template-name');
     expect(element.innerHTML).toBe('template-name Component');
   })
 
   test('失敗ケースのテスト', () => {
-    render(<TmplateName {...TemplateNameMockProps} />)
+    render(<TemplateName {...TemplateNameMockProps} />)
     const element = screen.getByTestId('template-name');
     expect(element.innerHTML).toBe('test');
   })
