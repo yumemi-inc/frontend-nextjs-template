@@ -7,7 +7,9 @@ interface ITemplateName {
   exampleValue: string
 }
 
-const TemplateName: FC<ITemplateName> = () => <></>
+const TemplateName: FC<ITemplateName> = () => {
+  return <></>;
+}
 
 /* pathが固定の場合は削除する */
 export const getStaticPaths: GetStaticPaths = async () => {

@@ -6,7 +6,9 @@ interface ITemplateName {
   exampleValue: string
 }
 
-const TemplateName: FC<ITemplateName> = () => <></>
+const TemplateName: FC<ITemplateName> = () => {
+  return <></>;
+}
 
 export const getStaticProps: GetServerSideProps<ITemplateName> = async (_context) => {
   return {
