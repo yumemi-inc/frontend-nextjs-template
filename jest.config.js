@@ -10,6 +10,7 @@ const customJestConfig = {
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
   },
+  testPathIgnorePatterns: ["<rootDir>/templates/"],
   testEnvironment: "jest-environment-jsdom",
 }
 
